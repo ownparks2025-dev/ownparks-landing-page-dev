@@ -101,6 +101,7 @@ export default function LandingPage() {
           <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 text-gray-900">
             <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
             <form
+              id="form"
               className="space-y-4"
               action="https://formspree.io/f/xldwewdd"
               method="POST"
@@ -159,36 +160,20 @@ export default function LandingPage() {
       <section className="w-full bg-white py-12">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           <div>
-            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">
-              50+
-            </p>
-            <p className="text-sm sm:text-base text-gray-700 mt-1">
-              PARKING ASSET LOCATION
-            </p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">50+</p>
+            <p className="text-sm sm:text-base text-gray-700 mt-1">PARKING ASSET LOCATION</p>
           </div>
           <div>
-            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">
-              20K+
-            </p>
-            <p className="text-sm sm:text-base text-gray-700 mt-1">
-              PARKING &quot;LEASE &amp; RENT&quot;
-            </p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">20K+</p>
+            <p className="text-sm sm:text-base text-gray-700 mt-1">PARKING &quot;LEASE &amp; RENT&quot;</p>
           </div>
           <div>
-            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">
-              200
-            </p>
-            <p className="text-sm sm:text-base text-gray-700 mt-1">
-              SPECIALIST PARTNERS
-            </p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">200</p>
+            <p className="text-sm sm:text-base text-gray-700 mt-1">SPECIALIST PARTNERS</p>
           </div>
           <div>
-            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">
-              15+
-            </p>
-            <p className="text-sm sm:text-base text-gray-700 mt-1">
-              UNIQUE SERVICES
-            </p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-blue-600">15+</p>
+            <p className="text-sm sm:text-base text-gray-700 mt-1">UNIQUE SERVICES</p>
           </div>
         </div>
       </section>
@@ -196,57 +181,51 @@ export default function LandingPage() {
       {/* About Section */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-6 text-center">
-            About Us
-          </h2>
+          <h2 className="text-4xl font-extrabold text-gray-900 mb-6 text-center">About Us</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-12 text-center">
-            Modern &amp; Advanced Technology for PARKING ASSET ALLOCATION. OWNPARKS utilizes
-            modern and advanced technology for efficient parking asset allocation, enhancing
-            convenience and management. Additionally, it offers various add-on services such as
-            valet assistance, vehicle monitoring, and customized parking solutions to optimize
-            your parking experience.
+            Modern &amp; Advanced Technology for PARKING ASSET ALLOCATION. OWNPARKS utilizes modern and advanced
+            technology for efficient parking asset allocation, enhancing convenience and management.
+            Additionally, it offers various add-on services such as valet assistance, vehicle monitoring,
+            and customized parking solutions to optimize your parking experience.
           </p>
 
-          <h3 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">
-            Key Features
-          </h3>
+          <h3 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">Key Features</h3>
           <div className="flex flex-col gap-2 items-start">
             <div className="flex items-center gap-4 bg-white shadow rounded-xl p-3 w-full">
               <DollarSign className="text-green-600 flex-shrink-0" />
-              <span className="text-gray-700 text-lg">
-                Affordable starting point: Available from just ₹4 Lacs.
-              </span>
+              <span className="text-gray-700 text-lg">Affordable starting point: Available from just ₹4 Lacs.</span>
             </div>
             <div className="flex items-center gap-4 bg-white shadow rounded-xl p-3 w-full">
               <TrendingUp className="text-green-600 flex-shrink-0" />
-              <span className="text-gray-700 text-lg">
-                Consistent income: Earn daily and monthly payments regularly.
-              </span>
+              <span className="text-gray-700 text-lg">Consistent income: Earn daily and monthly payments regularly.</span>
             </div>
             <div className="flex items-center gap-4 bg-white shadow rounded-xl p-3 w-full">
               <ClipboardCheck className="text-green-600 flex-shrink-0" />
-              <span className="text-gray-700 text-lg">
-                Easy process: Simple and hassle-free way to secure your space.
-              </span>
+              <span className="text-gray-700 text-lg">Easy process: Simple and hassle-free way to secure your space.</span>
             </div>
             <div className="flex items-center gap-4 bg-white shadow rounded-xl p-3 w-full">
               <CreditCard className="text-green-600 flex-shrink-0" />
-              <span className="text-gray-700 text-lg">
-                Reliable payments: Receive your earnings on time, every month.
-              </span>
+              <span className="text-gray-700 text-lg">Reliable payments: Receive your earnings on time, every month.</span>
             </div>
             <div className="flex items-center gap-4 bg-white shadow rounded-xl p-3 w-full">
               <Wrench className="text-green-600 flex-shrink-0" />
-              <span className="text-gray-700 text-lg">
-                Low maintenance: No worries about upkeep or additional costs.
-              </span>
+              <span className="text-gray-700 text-lg">Low maintenance: No worries about upkeep or additional costs.</span>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-gray-900 text-gray-200 py-10 mt-10">
         <div className="max-w-5xl mx-auto px-6 text-center">
+          {/* New Button */}
+          <a
+            href="#form"
+            className="inline-block mb-6 bg-white text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition"
+          >
+            Fill This Form
+          </a>
+
           <h4 className="text-xl font-semibold mb-4">OWNPARKS TECHNOLOGIES PVT. LTD.</h4>
           <p className="mb-2">Address: 21, Knowledge Park III, Greater Noida, U.P.</p>
           <p className="mb-2">Phone: +91-9829495886</p>
