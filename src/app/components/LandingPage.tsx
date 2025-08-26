@@ -65,7 +65,6 @@ export default function LandingPage() {
       className="w-full h-screen bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage }}
       aria-label="OwnParks landing background"
-      data-testid="bg-container"
     >
       <header className="flex justify-between items-center p-4 text-white bg-black/40">
         <div className="flex items-center gap-3">
@@ -77,7 +76,6 @@ export default function LandingPage() {
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white/10 hover:bg-white/20 backdrop-blur px-4 py-2 rounded-lg text-white border border-white/30"
-          data-testid="visit-main-website"
         >
           Visit Main Website
         </a>
@@ -87,10 +85,7 @@ export default function LandingPage() {
       <section className="max-w-7xl mx-auto px-6 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-10 items-start text-white">
           <div>
-            <h2
-              className="text-5xl md:text-6xl font-extrabold leading-tight"
-              data-testid="hero-title"
-            >
+            <h2 className="text-5xl md:text-6xl font-extrabold leading-tight">
               Lease and Rent
               <span className="block text-green-300">Future of Parking</span>
             </h2>
@@ -160,7 +155,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Stats Section (replacing 50.png) */}
+      {/* Stats Section */}
       <section className="w-full bg-white py-12">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           <div>
@@ -176,7 +171,7 @@ export default function LandingPage() {
               20K+
             </p>
             <p className="text-sm sm:text-base text-gray-700 mt-1">
-              PARKING "LEASE & RENT"
+              PARKING &quot;LEASE &amp; RENT&quot;
             </p>
           </div>
           <div>
