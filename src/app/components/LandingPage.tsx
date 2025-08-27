@@ -60,6 +60,14 @@ export default function LandingPage() {
     ? `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("${bgUrl}")`
     : `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55))`;
 
+  // Smooth scroll function to scroll to form section
+  const scrollToForm = () => {
+    const formSection = document.getElementById("form-section");
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className="w-full min-h-screen bg-no-repeat bg-cover bg-center"
@@ -83,7 +91,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+      <section id="form-section" className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start text-white">
           <div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
@@ -220,12 +228,12 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-200 py-8 sm:py-10 mt-10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-          <a
-            href="#form"
+          <button
+            onClick={scrollToForm}
             className="inline-block mb-6 bg-white text-gray-900 font-semibold px-5 py-3 rounded-lg hover:bg-gray-200 transition text-sm sm:text-base"
           >
             To know more fill the form.
-          </a>
+          </button>
 
           <h4 className="text-lg sm:text-xl font-semibold mb-4">OWNPARKS TECHNOLOGIES PVT. LTD.</h4>
           <p className="mb-2 text-sm sm:text-base">Address: 21, Knowledge Park III, Greater Noida, U.P.</p>
